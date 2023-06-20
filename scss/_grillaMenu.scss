@@ -1,0 +1,159 @@
+//Estilos pagina Menu
+
+#grilla-menu{
+    display: grid;
+    grid-template-areas: 
+        "hero hero hero"
+        "titulo titulo titulo"
+        "card1 card2 card3"
+        "menu1 menu2 menu3"
+        "piePag piePag piePag";
+    grid-template-rows: 90% 60% 60% 60% auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+#hero{
+    grid-area: hero;
+}
+
+#titulo{
+    grid-area: titulo;
+}
+
+#card1{
+    grid-area: card1;
+}
+
+#card2{
+    grid-area: card2;
+}
+
+#card3{
+    grid-area: card3;
+}
+
+#menu1{
+    grid-area: menu1;
+}
+
+#menu2{
+    grid-area: menu2;
+}
+
+#menu3{
+    grid-area: menu3;
+}
+
+#piePag{
+    grid-area: piePag;
+}
+
+.hero-menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .contenedor-img{
+        width: 50%;
+
+        img{
+            width: 100%;
+            height: 80%;
+        }
+    }
+    .contenedor-titulo{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 3rem;
+            font-weight: 500;
+            width: 80%;
+        }
+    }
+
+}
+
+.seccion-menu{
+    background-color: $colorPrincipal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subitulo-menu{
+    @extend .subtitulo-servicios;
+
+    p{
+        color: $colorBackground;
+        font-size: 1.5rem;
+    }
+    h3{
+        color: $colorBackground;
+        font-size: 2.5rem;
+    }
+}
+
+.buscador-menu{
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    label{
+        font-size: 1.3rem;
+        color: $colorBackground;
+        padding: 0 1rem;
+    }
+    input{
+        width: 70%;
+        line-height: 1.8rem;
+        border: none;
+    }
+}
+
+.cards-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        width: 60%;
+        height: 80%;
+        border: 1.5px solid $colorPrincipal;
+        border-radius: 5px;
+        box-shadow: 10px 6px 19px 0px rgba(0,0,0,0.42);
+-webkit-box-shadow: 10px 6px 19px 0px rgba(0,0,0,0.42);
+-moz-box-shadow: 10px 6px 19px 0px rgba(0,0,0,0.42);
+        transition: all 0.3s;
+        
+
+        &:hover{
+            transform: translateY(-2rem);
+            width: 63%;
+            height: 83%;
+            
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h4{
+        padding: 1rem 0;
+        color: $colorPrincipal;
+        text-shadow: 3px 4px 7px rgba(236,153,75,0.61);
+    }
+}

@@ -1,0 +1,170 @@
+//PAGINA CONTACTO
+
+//Media querie Tablet
+
+@media (max-width: 1200px){
+    #grilla-contacto{
+        display: grid;
+        grid-template-areas: 
+            "hero-contacto"
+            "section-contacto"
+            "piePag";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    
+    
+    #hero-contacto{
+        grid-area: hero-contacto;
+    }
+    
+    #section-contacto{
+        grid-area: section-contacto;
+    }
+    
+    #piePag{
+        grid-area: piePag;
+    }
+
+    .contenedor-contacto{
+        justify-content: center;
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .contenedor-img{
+        width: 50%;
+
+        img{
+            width: 90%;
+        }
+    }
+
+    .contenedor-form{
+        width: 40%;
+        padding: 0;
+        height: auto;
+
+        form{
+            width: 90%;
+
+            textarea{
+                height: 6rem;
+            }
+        }
+    }
+
+    .seccion-mapa{
+        height: auto;
+        padding: 0;
+
+        iframe{
+            width: 80%;
+            height: 70%;
+        }
+    }
+
+    .div-iframe-p{
+        padding-left: 3rem;
+    }
+}
+
+//Media Querie Celular
+
+@media (max-width: 599px){
+    #grilla-contacto{
+        display: grid;
+        grid-template-areas: 
+            "hero-contacto"
+            "section-contacto"
+            "piePag";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+
+    #hero-contacto{
+        grid-area: hero-contacto;
+    }
+    
+    #section-contacto{
+        grid-area: section-contacto;
+    }
+    
+    #piePag{
+        grid-area: piePag;
+    }
+
+    .main-contacto{
+        h2{
+            font-weight: 600;
+            font-size: 2rem;
+        }
+    }
+
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .contenedor-img{
+        width: 100%;
+        margin-top: 3rem;
+        height: auto;
+
+        img{
+            width: 80%;
+        }
+    }
+
+    .contenedor-form{
+        width: 100%;
+        height: 90vh;
+        padding: 0;
+        justify-content: center;
+
+        form{
+            width: 90%;
+            height: 90vh;
+            padding: 0;
+            justify-content: center;
+        }
+    }
+
+    //Seccion Mapa
+
+    .seccion-mapa{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .div-iframe{
+        width: 100%;
+        height: 90vh;
+        
+        iframe{
+            width: 80%;
+            height: 70%;
+        }
+    }
+
+    .div-iframe-p{
+        align-items: center;
+        width: 100%;
+        padding: 0;
+
+        h3{
+            color: $colorTitulo;
+            font-weight: 600;
+            padding: 1rem 0;
+            border-top: $colorParrafo 0.1px solid;
+        }
+    }
+}

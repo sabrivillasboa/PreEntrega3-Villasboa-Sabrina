@@ -1,0 +1,22 @@
+
+.navbar-brand{
+    color: $colorPrincipal;
+    width: 20%;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.navbar-nav{       
+    width: 70%;
+    color: $colorPrincipal;
+
+    a{
+        color: $colorTitulo;
+        padding: 8px 16px;
+        font-weight: 600;
+    }
+}
+
+
+

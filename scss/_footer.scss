@@ -1,0 +1,99 @@
+.pie-pag{
+    width: 100%;
+    display: flex;
+    background-color: $colorFooter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.footer-logo-y-redes{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+    ul{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+
+        hr{
+            width: 30%;
+            color: $colorBackground;
+        }
+
+        a{
+            font-weight: 700;
+            color: $colorBackground;
+            font-size: 1.3rem;
+            margin: 0.8rem 0;
+            text-decoration: none;
+
+            img{
+                width: 1.8rem;
+                padding-top: 1.8rem;
+            }
+        }
+    }
+
+    a{
+        font-weight: 600;
+        color: $colorBackground;
+        font-size: 1.3rem;
+        margin: 0.8rem 0;
+        text-decoration: none;
+    }
+}
+
+.footer-nav{
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: space-around;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        font-size: 0.8rem;
+
+        p{
+            font-weight: 600;
+            font-size: 1rem;
+            padding-bottom: 0.5rem;
+            text-align: left;
+            color: $colorBackground;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+
+            a{
+                color: $colorBackground;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+}
+
+.div-copyright{
+    p{
+        color: $colorBackground;
+        padding: 1rem 0;
+    }
+}
+
+
