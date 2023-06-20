@@ -15,6 +15,10 @@
   font-size: 25px;
 }
 
+.navbar-toggler {
+  color: #EC994B;
+}
+
 .navbar-nav {
   width: 70%;
   color: #EC994B;
@@ -544,7 +548,7 @@
 #grilla-menu {
   display: grid;
   grid-template-areas: "hero hero hero" "titulo titulo titulo" "card1 card2 card3" "menu1 menu2 menu3" "piePag piePag piePag";
-  grid-template-rows: 90% 60% 70% 70% auto;
+  grid-template-rows: 90% 60% 60% 60% auto;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
 }
@@ -688,7 +692,6 @@
     grid-template-areas: "hero hero" "titulo titulo" "card1 card2" "card3 menu1" "menu2 menu3" "piePag piePag";
     grid-template-rows: 80vh auto auto auto auto auto;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
   }
   #hero {
     grid-area: hero;
@@ -717,12 +720,80 @@
   #piePag {
     grid-area: piePag;
   }
-  .contenedor-img {
-    width: 80%;
+  .hero-menu .contenedor-img {
+    height: 100%;
   }
-  .contenedor-img img {
+  .hero-menu .contenedor-img img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .hero-menu .contenedor-titulo h2 {
+    font-size: 2.5rem;
+  }
+  .subitulo-menu h3 {
+    font-size: 2rem;
+  }
+  .buscador-menu {
+    width: 90%;
+  }
+  .buscador-menu label {
+    padding-bottom: 2rem;
+  }
+  .buscador-menu input {
+    width: 63%;
+    height: 2.2rem;
+  }
+  .cards-div {
+    height: 70vh;
+  }
+}
+@media (max-width: 479px) {
+  #grilla-menu {
+    display: grid;
+    grid-template-areas: "hero" "titulo" "card1" "card2" "card3" "menu1" "menu2" "menu3" "piePag ";
+    grid-template-rows: auto 60vh auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
+  .hero-menu {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .hero-menu .contenedor-img {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 70vh;
+  }
+  .hero-menu .contenedor-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .hero-menu .contenedor-titulo {
+    width: 100%;
+    height: 40vh;
+  }
+  .hero-menu .contenedor-titulo h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .buscador-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .buscador-menu label {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .buscador-menu input {
+    width: 100%;
+  }
+  .cards-div div {
+    width: 70%;
   }
 }
 
