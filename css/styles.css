@@ -247,6 +247,9 @@
     align-items: center;
     justify-content: center;
   }
+  .hero-servicios div {
+    width: 90%;
+  }
   .titulo-servicios {
     display: flex;
     flex-direction: column;
@@ -518,6 +521,9 @@
     height: 90vh;
     padding: 0;
     justify-content: center;
+  }
+  .contenedor-form input, .contenedor-form button {
+    height: 2.8rem;
   }
   .seccion-mapa {
     flex-direction: column-reverse;
@@ -791,6 +797,7 @@
   }
   .buscador-menu input {
     width: 100%;
+    height: 2.5rem;
   }
   .cards-div div {
     width: 70%;
